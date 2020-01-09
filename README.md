@@ -1,6 +1,6 @@
-This work demonstrates qualitative results of **dynamic** hand pose estimation using a **multi-view** setup with a readily available **color camera** and **plane mirrors**.
+This work demonstrates the potential of **dynamic** hand pose estimation using a **multi-view** setup with a readily available **color camera** and **plane mirrors**.
 
-All the videos are captured on a mobile phone and post-processed on a computer to generate the 2D hand keypoints with bounding boxes of the hand (left column) and 3D hand skeleton projected onto individual view (right column).
+All the videos are captured on a mobile phone and post-processed on a computer to generate 2D hand keypoints with bounding boxes of the hand (left column) and 3D hand skeleton projected onto individual view (right column).
 
 ## Qualitative Results
 
