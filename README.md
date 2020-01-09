@@ -5,6 +5,8 @@ All the videos are captured on a mobile phone and post-processed on a computer t
 ## Qualitative Results
 
 1) Video on hand only
+<img src="video/hand_only.gif">
+
 <iframe width="960" height="270" src="https://www.youtube.com/embed/X8sVhl8Wswk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 2) Video on hand interacting with a ball
