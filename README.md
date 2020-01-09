@@ -4,19 +4,19 @@ All the videos are captured on a mobile phone and post-processed on a computer t
 
 ## Qualitative Results
 
-1) Video on hand only
+1) [Video](https://www.youtube.com/embed/X8sVhl8Wswk) on hand only
 <img src="video/hand_only.gif">
 
-2) Video on hand interacting with a ball
+2) [Video](https://www.youtube.com/embed/wcudUoM_ZcQ) on hand interacting with a ball
 <img src="video/hand_with_ball.gif">
 
-3) Video on hand interacting with a cup
+3) [Video](https://www.youtube.com/embed/37z8yIOd7GM) on hand interacting with a cup
 <img src="video/hand_with_cup.gif">
 
-4) Video on hand interacting with a cube (length of 5 cm)
+4) [Video](https://www.youtube.com/embed/VhW-38FZN6Y) on hand interacting with a cube (length of 5 cm)
 <img src="video/hand_with_cube_small.gif">
 
-5) Video on hand interacting with a bigger cube (length of 7.5 cm)
+5) [Video](https://www.youtube.com/embed/QxNZqGyWXUo) on hand interacting with a bigger cube (length of 7.5 cm)
 <img src="video/hand_with_cube_big.gif">
 
 ## Software codes
