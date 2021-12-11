@@ -1,19 +1,22 @@
-[Camera-based Hand Tracking using a Mirror-based Multi-view Setup](https://www.youtube.com/embed/X8sVhl8Wswk)
-<img src="video/hand_only.gif">
+# Camera-based Hand Tracking using a Mirror-based Multi-view Setup
 
-This repository contains sample codes to demonstrate the potential of **dynamic** hand pose estimation using a **multi-view** setup with a readily available **color camera** and **plane mirrors**.
+![](video/hand_only.gif)
 
-All the videos and images are captured on a mobile phone and post-processed on a computer to generate 2D hand keypoints with bounding boxes of the hand (left column) and 3D hand skeleton projected onto individual view (right column).
+This repo contains the sample code for the paper: Camera-based Hand Tracking using a Mirror-based Multi-view Setup.
 
-If you find our code or paper useful, please consider citing
-```
+[**Paper**](https://doi.org/10.1109/EMBC44109.2020.9176728) | [**Project**](https://gmntu.github.io/mirror/)
+
+
+If you find our work useful, please consider citing
+```BibTeX
 @inproceedings{mirror:2020,
-  title = {Camera-based Hand Tracking using a Mirror-based Multi-view Setup},
-  author = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
+  title     = {Camera-based Hand Tracking using a Mirror-based Multi-view Setup},
+  author    = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
   booktitle = {42st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
-  year = {2020}
+  year      = {2020}
 }
 ```
+
 ## Usage
 If the camera intrinsics and extrinsics have been calibrated and saved, can proceed to step 4) directly
 
@@ -39,15 +42,14 @@ python 07_model_fitting_video.py --file ball
 
 ## Qualitative Results
 
-1) [Video](https://www.youtube.com/embed/wcudUoM_ZcQ) on hand interacting with a ball
-<img src="video/hand_with_ball.gif">
+1) Hand interacting with a ball
+![](video/hand_with_ball.gif)
 
-2) [Video](https://www.youtube.com/embed/37z8yIOd7GM) on hand interacting with a cup
-<img src="video/hand_with_cup.gif">
+2) Hand interacting with a cup
+![](video/hand_with_cup.gif)
 
-3) [Video](https://www.youtube.com/embed/VhW-38FZN6Y) on hand interacting with a cube (length of 5 cm)
-<img src="video/hand_with_cube_small.gif">
+3) Hand interacting with a cube (length of 5 cm)
+![](video/hand_with_cube_small.gif)
 
-4) [Video](https://www.youtube.com/embed/QxNZqGyWXUo) on hand interacting with a bigger cube (length of 7.5 cm)
-<img src="video/hand_with_cube_big.gif">
-
+4) Hand interacting with a bigger cube (length of 7.5 cm)
+![](video/hand_with_cube_big.gif)
