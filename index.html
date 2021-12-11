@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Mirror.">
+  <meta name="keywords" content="Hand tracking, mirror, multi-view">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camera-based Hand Tracking using a Mirror-based Multi-view Setup</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<!-- Project title, author's name and affiliation, link to paper, video, code and data-->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Camera-based Hand Tracking using a Mirror-based Multi-view Setup</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="http://gmntu.github.io/">Guan Ming Lim</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.ntu.edu.sg/rris/about-us/our-people/researchers/researcher-staff/dr-prayook-jetesiktat">Prayook Jatesiktat</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.ntu.edu.sg/rris/about-us/our-people/researchers/researcher-staff/christopher-kuah-wee-keong">Christopher Wee Keong Kuah</a><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://dr.ntu.edu.sg/cris/rp/rp00218">Wei Tech Ang</a><sup>1,2</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Nanyang Technological University,</span>
+            <span class="author-block"><sup>2</sup>Rehabilitation Research Institute of Singapore,</span>
+            <span class="author-block"><sup>3</sup>Centre for Advanced Rehabilitation Therapeutics</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://doi.org/10.1109/EMBC44109.2020.9176728"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/gmntu/mirror"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop height="100%">
+        <source src="https://user-images.githubusercontent.com/47173496/145684863-707bc6a2-9886-4e13-80ef-f59e7d503723.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Dynamic hand pose estimation using a multi-view setup with a readily available color camera and plane mirrors.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current clinical practice of measuring hand joint range of motion relies on a goniometer as it is inexpensive, portable, and easy to use, but it can only measure the static angle of a single joint at a time.
+            To measure dynamic hand motion, a camera-based system that can perform markerless hand pose estimation is attractive, as the system is ubiquitous, low-cost, and non-contact.
+            However, camera-based systems require line-of-sight, and tracking accuracy degrades when the joint is occluded from the camera view.
+            Thus, we propose a multi-view setup using a readily available color camera from a single mobile phone, and plane mirrors to create multiple views of the hand.
+            This setup eliminates the complexity of synchronizing multiple cameras and reduce the issue of occlusion.
+            Experimental results show that the multi-view setup could help to reduce the error in measuring the flexion angle of finger joints.
+            Dynamic hand pose estimation with object interaction is also demonstrated.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract -->
+
+    <!-- Method -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <img src="image/overview.png" width="1000" height="203" />
+          <p>
+            Overview of the multi-view setup with a mobile phone and two plane mirrors mounted rigidly on a stable tabletop. Mirrors are used to create multiple views of the same hand to reduce the issue of occlusion. We first identify 2D hand keypoints in the images using Gouidis et al. work on <a href="https://github.com/FORTH-ModelBasedTracker/MonocularRGB_2D_Handjoints_MVA19">Accurate Hand Keypoint Localization on Mobile Devices</a>). Next, we optimized 3D pose of a skeletal hand model to match all the keypoints in each view.
+          </p>
+          <img src="image/multiview.png" width="1000" height="383" />
+          <p>
+            By adjusting the angle between the mirrors, it would result in double reflections creating more virtual cameras and different number of views.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Method -->
+
+    <!-- Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <video id="ball" autoplay muted loop height="100%">
+            <source src="https://user-images.githubusercontent.com/47173496/145685272-63668273-f60f-426f-81f9-5135805f6650.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="cup" autoplay muted loop height="100%">
+            <source src="https://user-images.githubusercontent.com/47173496/145685282-329a4d4e-6179-4743-a2f2-cb1cd40b5d14.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="small_cube" autoplay muted loop height="100%">
+            <source src="https://user-images.githubusercontent.com/47173496/145685302-2860ad4a-b268-43df-b66e-5a57bc8cd746.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="big_cube" autoplay muted loop height="100%">
+            <source src="https://user-images.githubusercontent.com/47173496/145685309-08f28770-35ea-4cf7-96d9-58ee94d6b88c.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Results -->
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{hoseg:2019,
+      title     = {Hand and Object Segmentation from Depth Image using Fully Convolutional Network},
+      author    = {Guan Ming, Lim and Prayook, Jatesiktat and Christopher Wee Keong, Kuah and Wei Tech, Ang},
+      booktitle = {41st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)},
+      year      = {2019}
+    }
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This webpage is built with the template from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
